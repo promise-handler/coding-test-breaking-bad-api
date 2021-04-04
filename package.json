@@ -4,8 +4,17 @@
   "description": "You are part of a team that builds a Breaking Bad fan-site. You are in charge of writing a program that returns the list of episodes from the Breaking Bad tv show, where the given characters have appeared together.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack serve --open"
   },
   "author": "Szymon Krysztofiak",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
 }
