@@ -1,6 +1,6 @@
 import getAllEpisodes from './episodes'
 
-const searchEpisodesByCharacters = (characters, episodes) => {
+export const searchEpisodesByCharacters = (characters, episodes) => {
   if (characters && typeof characters === 'string') {
     return episodes.filter((episode) => episode.characters.includes(characters))
   }
@@ -11,7 +11,7 @@ const searchEpisodesByCharacters = (characters, episodes) => {
   })
 }
 
-const mapSearchResults = (results) => {
+export const mapSearchResults = (results) => {
   const mappedResults = results.map((result) => {
     const parseWithZero = (number) =>
       Number(number) <= 9 ? `0${number.trim()}` : number
