@@ -1,28 +1,11 @@
-let formValue = ''
-const form = document.querySelector('.BreakingBad__form')
+import formModule from './modules/form'
+import searchModule from './modules/search'
 
-const hasComma = (value) => {
-  return value.includes(',')
-}
+formModule.form.addEventListener('submit', formModule.handleForm)
 
-const createArrayFromString = (string) => {
-  return string.split(',')
-}
+const search = searchModule.search
 
-const handleForm = (event) => {
-  event.preventDefault()
-  const { value: inputValue } = form.elements['search-input']
+export default search
 
-  if (hasComma(inputValue)) {
-    formValue = createArrayFromString(inputValue)
-  } else {
-    formValue = inputValue
-  }
-}
-
-form.addEventListener('submit', handleForm)
-
-// TODO: Handle API calls with a service method
-// TODO: Transform data using the search phrase
-// TODO: DOM manipulations
+// TODO: Add tests
 // TODO: Write documentation (README file)

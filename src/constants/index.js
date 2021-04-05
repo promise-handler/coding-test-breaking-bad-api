@@ -1,1 +1,1 @@
-export const BASE_URL = 'test'
+export const BASE_URL = 'https://www.breakingbadapi.com/api/'
