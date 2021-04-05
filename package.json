@@ -4,7 +4,8 @@
   "description": "You are part of a team that builds a Breaking Bad fan-site. You are in charge of writing a program that returns the list of episodes from the Breaking Bad tv show, where the given characters have appeared together.",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
     "start:dev": "webpack serve --open"
   },
   "author": "Szymon Krysztofiak",
@@ -15,6 +16,10 @@
     "webpack-cli": "^4.6.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
     "webpack-dev-server": "^3.11.2"
   }
 }

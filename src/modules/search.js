@@ -38,8 +38,6 @@ const search = async (searchPhrase, episodes = []) => {
   const searchResults = searchEpisodesByCharacters(searchPhrase, allEpisodes)
   const searchResultsMapped = mapSearchResults(searchResults)
 
-  console.log(searchResultsMapped)
-
   return searchResultsMapped
 }
 

@@ -1,8 +1,8 @@
-const hasComma = (value) => {
+export const hasComma = (value) => {
   return value.includes(',')
 }
 
-const createArrayFromString = (string) => {
+export const createArrayFromString = (string) => {
   const array = string.split(',')
   return array.map(item => item.trim())
 }
