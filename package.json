@@ -2,7 +2,7 @@
   "name": "coding-test-breaking-bad-api",
   "version": "1.0.0",
   "description": "You are part of a team that builds a Breaking Bad fan-site. You are in charge of writing a program that returns the list of episodes from the Breaking Bad tv show, where the given characters have appeared together.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "webpack serve --open"
