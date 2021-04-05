@@ -1,5 +1,4 @@
 import getAllEpisodes from './episodes'
-
 import {
   default as search,
   searchEpisodesByCharacters,
@@ -46,6 +45,7 @@ describe('search', () => {
           expect(searchEpisodesByCharacters([], mockedEpisodes)).toEqual([])
         })
       })
+
       describe('if characters array is not empty', () => {
         it('should return values correctly', () => {
           expect(searchEpisodesByCharacters(['test1'], mockedEpisodes)).toEqual(

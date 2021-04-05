@@ -27,6 +27,7 @@ describe('utils', () => {
         expect(parseValue(mockedValue)).toEqual(expectedResult)
       })
     })
+
     describe('if value has no comma', () => {
       it('should return correct value', () => {
         const mockedValue = 'Test'
